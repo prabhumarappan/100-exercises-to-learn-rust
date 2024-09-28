@@ -51,7 +51,7 @@ impl Ticket {
             panic!("Title cannot be empty");
         }
         if new_title.len() > 50 {
-            panic!("Title cannot be longer than 50 characters");
+            panic!("Title cannot be longer than 50 bytes");
         }
         self.title = new_title;
     }
@@ -61,7 +61,7 @@ impl Ticket {
             panic!("Description cannot be empty");
         }
         if new_description.len() > 500 {
-            panic!("Description cannot be longer than 500 characters");
+            panic!("Description cannot be longer than 500 bytes");
         }
         self.description = new_description;
     }
